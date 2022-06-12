@@ -1,0 +1,205 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/**Navbar Styling ***/
+
+.navbar img {
+    width: 190px;
+    height: 120px;
+    padding: 0 93px;
+    cursor: pointer;
+
+}
+
+.main-navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-items: flex-start;
+
+}
+
+.navbar i {
+    color: black;
+    cursor: pointer;
+    padding: 5px 23px;
+    padding-top: 12px;
+    font-size: 23px;
+}
+
+.navbar input {
+    display: none;
+
+}
+
+.menu-items {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.menu-items li {
+    list-style: none;
+    padding: 22px 12px;
+    text-transform: uppercase;
+
+}
+
+p {
+    margin: 200px 0;
+}
+
+.menu-items li input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 103px;
+    text-transform: uppercase;
+    background-color: transparent;
+
+
+
+
+}
+
+.menu-items li a {
+    text-decoration: none;
+    color: grey;
+}
+
+.menu-items li a:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+.wrong {
+    position: fixed;
+    left: 2px;
+}
+
+.menubutton {
+    position: fixed;
+    top: 102px;
+    display: none;
+    background-color: rgba(128, 128, 128, 0.015);
+    height: 100%;
+}
+
+.menubutton li {
+    list-style: none;
+    padding: 2px 12px;
+    color: black;
+    cursor: pointer;
+
+}
+
+.menubutton li:hover {
+    color: black;
+}
+
+.active {
+
+
+    display: flex;
+}
+
+/**content styling **/
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    padding: 94px 0;
+
+}
+
+.content li {
+    list-style: none;
+    padding: 45px 0;
+}
+
+/**footer Styling **/
+.footer {
+    position: fixed;
+    bottom: 42px;
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer li {
+    text-transform: uppercase;
+    list-style: none;
+    color: grey;
+    padding: 0 23px;
+    cursor: pointer;
+}
+
+.footer li:hover {
+    cursor: pointer;
+    color: black;
+}
+
+@media screen and (max-width:700px) {
+    .content {
+        padding: 12px 0;
+    }
+
+    .menu-items {
+        display: none;
+    }
+
+    .navbar img {
+        width: 50px;
+        height: 20px;
+        padding: 0 13px;
+        cursor: pointer;
+
+    }
+
+    .content {
+
+        padding: 4px 0;
+
+    }
+
+    .content li {
+        list-style: none;
+        padding: 5px 0;
+    }
+
+    .content li img {
+        width: 450px;
+    }
+
+    .footer li {
+        font-size: small;
+        padding: 0 5px;
+
+    }
+
+    .footer {
+        bottom: 0;
+    }
+}
